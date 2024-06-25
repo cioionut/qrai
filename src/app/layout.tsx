@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { Suspense } from 'react';
-import { cookies } from 'next/headers';
+// import { cookies } from 'next/headers';
 import { Inter } from 'next/font/google';
 
 // local
@@ -16,7 +16,7 @@ import Navbar from '@/components/core/navbar';
 import { websiteName } from '@/lib/commons/constants';
 
 const inter = Inter({ subsets: ['latin'] });
-export const runtime = 'edge';
+// export const runtime = 'edge';
 
 
 export const metadata: Metadata = {
@@ -37,10 +37,10 @@ export default async function RootLayout({
 }) {
   const { locale } = params;
 
-  const nextCookies = cookies();
-  const lang = nextCookies.get('lng')?.value;
+  // const nextCookies = cookies();
+  // const lang = nextCookies.get('lng')?.value;
   // first use locale from url params
-  const localeValue = locale || lang || 'en';
+  const localeValue = 'en';
 
   return (
     // https://github.com/pacocoursey/next-themes?tab=readme-ov-file#with-app
