@@ -16,6 +16,8 @@ import Navbar from '@/components/core/navbar';
 import { websiteName } from '@/lib/commons/constants';
 
 const inter = Inter({ subsets: ['latin'] });
+export const runtime = 'edge';
+
 
 export const metadata: Metadata = {
   // https://nextjs.org/docs/app/building-your-application/optimizing/metadata
