@@ -4,6 +4,7 @@ import Link from "next/link";
 // local
 import { websiteName } from '@/lib/commons/constants';
 // local components
+import Settings from "../settings/settings";
 
 
 interface Props {
@@ -45,6 +46,7 @@ export default async function Navbar(props: Props) {
           {/* <!-- Navbar menu content here --> */}
           <li><Link href="/">{home}</Link></li>
           <li><Link href="/about">{about}</Link></li>
+          <li><Settings /></li>
         </ul>
       </div>
     </div >

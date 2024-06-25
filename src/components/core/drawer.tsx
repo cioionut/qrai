@@ -1,6 +1,8 @@
 import Link from "next/link";
 
 // local
+import Settings from "../settings/settings";
+
 
 interface Props {
   lang: string,
@@ -18,6 +20,7 @@ export default async function Drawer(props: Props) {
         {/* <!-- Sidebar content here --> */}
         <li><Link href="/">{home}</Link></li>
         <li><Link href="/about">{about}</Link></li>
+        <li><Settings /></li>
       </ul>
     </div>
   );
